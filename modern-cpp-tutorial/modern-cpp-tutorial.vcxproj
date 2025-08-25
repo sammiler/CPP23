@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="constexpr.cpp" />
+    <ClCompile Include="MagicFoo.cpp" />
     <ClCompile Include="modern.ixx" />
+    <ClCompile Include="nullptr.cpp" />
+    <ClCompile Include="switch.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -11,8 +11,11 @@ int main()
     std::print("Result1 is: {}!\n", res1);
     std::println("Result2 is : {}!\n", res2);
     std::print("Result3 is: {}!\n", res3);
+    // testadd end
     ModernCpp::demonstrate_nullptr_safety();
     ModernCpp::constexpr_func();
-    // testadd end
+    ModernCpp::switch_func();
+    ModernCpp::MagicFoo magic_foo = {1, 2, 3, 4, 5};
+    magic_foo.print();
     return 0;
 }

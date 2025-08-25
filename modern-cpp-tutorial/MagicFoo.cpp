@@ -1,13 +1,25 @@
 module modern;
 
-ModernCpp::MagicFoo::MagicFoo(std::initializer_list<int> list)
+class ModernCpp::MagicFoo::Impl
 {
-    for (auto element : list) {
-        vec.emplace_back(element);
-    }
-}
+public:
+    Impl(std::initializer_list<int> list)
+        : vec(list)
+    {}
+
+    void print() const { std::println("Vec:{}", vec); }
+
+private:
+    std::vector<int> vec;
+};
+
+ModernCpp::MagicFoo::MagicFoo(std::initializer_list<int> list)
+    : pimpl(std::make_unique<Impl>(list))
+{}
 
 void ModernCpp::MagicFoo::print() const
 {
-    std::println("Vec:{}", vec);
+    pimpl->print();
 }
+
+ModernCpp::MagicFoo::~MagicFoo() = default;

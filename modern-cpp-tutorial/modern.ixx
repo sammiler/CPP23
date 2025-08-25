@@ -11,12 +11,18 @@ export namespace ModernCpp {
 MODERN_API void demonstrate_nullptr_safety();
 MODERN_API void constexpr_func();
 MODERN_API void switch_func();
-
+#pragma warning(push)
+#pragma warning(disable : 4251)
 class MODERN_API MagicFoo
 {
 public:
     MagicFoo(std::initializer_list<int> vec);
     void print() const;
-    std::vector<int> vec;
+    ~MagicFoo();
+
+private:
+    class Impl;
+    std::unique_ptr<Impl> pimpl;
 };
+#pragma warning(pop)
 } // namespace ModernCpp

@@ -18,6 +18,16 @@ constexpr int fibonacci(const int n)
     return n == 1 || n == 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+template<typename T>
+auto print_type_info(const T &t)
+{
+    if constexpr (std::is_integral_v<T>) {
+        return t + 1;
+    } else {
+        return t + 0.001;
+    }
+}
+
 void ModernCpp::constexpr_func()
 {
     char arr_1[10];
@@ -32,4 +42,6 @@ void ModernCpp::constexpr_func()
 
     std::println("Fibonacci(10) : {}", fibonacci(10));
     std::println("Fibonacci(20) : {}", fibonacci(20));
+    std::println("{}", print_type_info(5));
+    std::println("{}", print_type_info(3.14));
 }

@@ -17,5 +17,10 @@ int main()
     ModernCpp::switch_func();
     ModernCpp::MagicFoo magic_foo = {1, 2, 3, 4, 5};
     magic_foo.print();
+    ModernCpp::tuple_bindings();
+    ModernCpp::auto_func();
+    ModernCpp::template_func();
+    ModernCpp::lambda_func();
+    ModernCpp::lambda_func();
     return 0;
 }

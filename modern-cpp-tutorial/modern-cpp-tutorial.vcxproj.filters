@@ -30,5 +30,17 @@
     <ClCompile Include="MagicFoo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="tuple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambda.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

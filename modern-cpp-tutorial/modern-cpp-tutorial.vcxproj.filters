@@ -42,5 +42,8 @@
     <ClCompile Include="Lambda.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="containers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

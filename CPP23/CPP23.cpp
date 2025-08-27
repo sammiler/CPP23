@@ -22,5 +22,6 @@ int main()
     ModernCpp::template_func();
     ModernCpp::lambda_func();
     ModernCpp::lambda_func();
+    ModernCpp::containers_func();
     return 0;
 }

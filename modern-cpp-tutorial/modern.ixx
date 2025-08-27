@@ -15,6 +15,7 @@ MODERN_API void tuple_bindings();
 MODERN_API void auto_func();
 MODERN_API void template_func();
 MODERN_API void lambda_func();
+MODERN_API void containers_func();
 #pragma warning(push)
 #pragma warning(disable : 4251)
 class MODERN_API MagicFoo

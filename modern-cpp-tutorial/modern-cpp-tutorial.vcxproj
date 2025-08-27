@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="auto.cpp" />
     <ClCompile Include="constexpr.cpp" />
+    <ClCompile Include="containers.cpp" />
     <ClCompile Include="Lambda.cpp" />
     <ClCompile Include="MagicFoo.cpp" />
     <ClCompile Include="modern.ixx" />
